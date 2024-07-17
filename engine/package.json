@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "redis": "^4.6.15"
+  }
+}
