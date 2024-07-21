@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import { createClient } from "redis";
 
 import { orderRouter } from './routes/order';
 import { depthRouter } from './routes/depth';
@@ -14,6 +15,11 @@ app.use("/api/v1/order", orderRouter);
 app.use("/api/v1/depth", depthRouter);
 app.use("/api/v1/trades", tradesRouter);
 app.use("api/v1/tickers", tickerRouter);
+
+
+
+
+
 
 
 app.listen(3000, ()=>{
